@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		2C9C03F72942CF0500E34B7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9C03F52942CF0500E34B7E /* Main.storyboard */; };
 		2C9C03F92942CF0600E34B7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9C03F82942CF0600E34B7E /* Assets.xcassets */; };
 		2C9C03FC2942CF0600E34B7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9C03FA2942CF0600E34B7E /* LaunchScreen.storyboard */; };
+		2C9C04042942E92D00E34B7E /* NaverLoginProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C04032942E92D00E34B7E /* NaverLoginProfileResponse.swift */; };
+		F0822A7ADCB1B60E6F504D31 /* Pods_NaverLoginPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DEEB225A9C94B9240DBB9A /* Pods_NaverLoginPractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		088EA06C6624EE15B2AF222F /* Pods-NaverLoginPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverLoginPractice.debug.xcconfig"; path = "Target Support Files/Pods-NaverLoginPractice/Pods-NaverLoginPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		2C9C03EC2942CF0500E34B7E /* NaverLoginPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaverLoginPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9C03EF2942CF0500E34B7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C9C03F12942CF0500E34B7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		2C9C03F82942CF0600E34B7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C9C03FB2942CF0600E34B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C9C03FD2942CF0600E34B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9C04032942E92D00E34B7E /* NaverLoginProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverLoginProfileResponse.swift; sourceTree = "<group>"; };
+		550D13EBA8BCCE1D94D91AC4 /* Pods-NaverLoginPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverLoginPractice.release.xcconfig"; path = "Target Support Files/Pods-NaverLoginPractice/Pods-NaverLoginPractice.release.xcconfig"; sourceTree = "<group>"; };
+		F3DEEB225A9C94B9240DBB9A /* Pods_NaverLoginPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaverLoginPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0822A7ADCB1B60E6F504D31 /* Pods_NaverLoginPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				2C9C03EE2942CF0500E34B7E /* NaverLoginPractice */,
 				2C9C03ED2942CF0500E34B7E /* Products */,
+				5EC602227FAD90931FE63014 /* Pods */,
+				94F25464A126548A88534B38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,30 @@
 				2C9C03EF2942CF0500E34B7E /* AppDelegate.swift */,
 				2C9C03F12942CF0500E34B7E /* SceneDelegate.swift */,
 				2C9C03F32942CF0500E34B7E /* ViewController.swift */,
+				2C9C04032942E92D00E34B7E /* NaverLoginProfileResponse.swift */,
 				2C9C03F52942CF0500E34B7E /* Main.storyboard */,
 				2C9C03F82942CF0600E34B7E /* Assets.xcassets */,
 				2C9C03FA2942CF0600E34B7E /* LaunchScreen.storyboard */,
 				2C9C03FD2942CF0600E34B7E /* Info.plist */,
 			);
 			path = NaverLoginPractice;
+			sourceTree = "<group>";
+		};
+		5EC602227FAD90931FE63014 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				088EA06C6624EE15B2AF222F /* Pods-NaverLoginPractice.debug.xcconfig */,
+				550D13EBA8BCCE1D94D91AC4 /* Pods-NaverLoginPractice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		94F25464A126548A88534B38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3DEEB225A9C94B9240DBB9A /* Pods_NaverLoginPractice.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C9C04002942CF0600E34B7E /* Build configuration list for PBXNativeTarget "NaverLoginPractice" */;
 			buildPhases = (
+				4D33A6F3A09F45C49A83D606 /* [CP] Check Pods Manifest.lock */,
 				2C9C03E82942CF0500E34B7E /* Sources */,
 				2C9C03E92942CF0500E34B7E /* Frameworks */,
 				2C9C03EA2942CF0500E34B7E /* Resources */,
+				C9B8AAE88F16F7470E7E760A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +132,7 @@
 				};
 			};
 			buildConfigurationList = 2C9C03E72942CF0500E34B7E /* Build configuration list for PBXProject "NaverLoginPractice" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D33A6F3A09F45C49A83D606 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NaverLoginPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9B8AAE88F16F7470E7E760A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverLoginPractice/Pods-NaverLoginPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverLoginPractice/Pods-NaverLoginPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaverLoginPractice/Pods-NaverLoginPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C9C03E82942CF0500E34B7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +212,7 @@
 				2C9C03F42942CF0500E34B7E /* ViewController.swift in Sources */,
 				2C9C03F02942CF0500E34B7E /* AppDelegate.swift in Sources */,
 				2C9C03F22942CF0500E34B7E /* SceneDelegate.swift in Sources */,
+				2C9C04042942E92D00E34B7E /* NaverLoginProfileResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +354,7 @@
 		};
 		2C9C04012942CF0600E34B7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088EA06C6624EE15B2AF222F /* Pods-NaverLoginPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +383,7 @@
 		};
 		2C9C04022942CF0600E34B7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 550D13EBA8BCCE1D94D91AC4 /* Pods-NaverLoginPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
