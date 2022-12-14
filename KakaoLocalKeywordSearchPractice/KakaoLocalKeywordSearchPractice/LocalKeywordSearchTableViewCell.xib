@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="46" id="KGk-i7-Jjw" customClass="LocalKeywordSearchTableViewCell" customModule="KakaoLocalKeywordSearchPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수내중학교" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPU-ZO-Nfz">
+                        <rect key="frame" x="5" y="5" width="65" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경기도 수내로 201" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grr-Tf-2id">
+                        <rect key="frame" x="5" y="25" width="97" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Grr-Tf-2id" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="GAE-d5-rrO"/>
+                    <constraint firstItem="gPU-ZO-Nfz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="TV8-8w-Ray"/>
+                    <constraint firstItem="Grr-Tf-2id" firstAttribute="top" secondItem="gPU-ZO-Nfz" secondAttribute="bottom" constant="2" id="XxJ-ob-neK"/>
+                    <constraint firstItem="gPU-ZO-Nfz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="a7R-o4-86t"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="placeNameLabel" destination="gPU-ZO-Nfz" id="7hs-Yc-HIF"/>
+                <outlet property="roadAddressName" destination="Grr-Tf-2id" id="ATT-Td-kIv"/>
+            </connections>
+            <point key="canvasLocation" x="135.87786259541986" y="-10.563380281690142"/>
+        </tableViewCell>
+    </objects>
+</document>
