@@ -1,0 +1,16 @@
+PODS:
+  - CardsLayout (0.0.1)
+
+DEPENDENCIES:
+  - CardsLayout
+
+SPEC REPOS:
+  trunk:
+    - CardsLayout
+
+SPEC CHECKSUMS:
+  CardsLayout: ceeb8f9c26319b47a2f0995ea4590cf7ba881462
+
+PODFILE CHECKSUM: 14ea271b9971a2945e8ea8c703dda377dd136d5c
+
+COCOAPODS: 1.11.3
