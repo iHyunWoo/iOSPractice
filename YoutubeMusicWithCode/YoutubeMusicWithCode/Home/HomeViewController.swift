@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
 		tableView.register(HomeTopBarTableViewCell.self, forCellReuseIdentifier: HomeTopBarTableViewCell.identifier)
 		tableView.register(HomeMoodTableViewCell.self, forCellReuseIdentifier: HomeMoodTableViewCell.identifier)
 		tableView.register(HomeFastSelectTableViewCell.self, forCellReuseIdentifier: HomeFastSelectTableViewCell.identifier)
+		tableView.register(HomePlaylistTableViewCell.self, forCellReuseIdentifier: HomePlaylistTableViewCell.identifier)
 		tableView.backgroundColor = .black
 		
 		return tableView
@@ -50,7 +51,7 @@ extension HomeViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 3
+		return 4
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,6 +67,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 		case 2:
 			guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeFastSelectTableViewCell.identifier) as? HomeFastSelectTableViewCell else {return UITableViewCell()}
 			return cell
+		case 3:
+			guard let cell = tableView.dequeueReusableCell(withIdentifier: HomePlaylistTableViewCell.identifier) as? HomePlaylistTableViewCell else {return UITableViewCell()}
+			cell.titleLabel.text = "차트"
+			return cell
 		default:
 			return UITableViewCell()
 		}
@@ -78,8 +83,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 			return 50
 		case 1:
 			return 40+10
-//		case 2:
-//			return 200
+		case 2:
+			let cellHeight = 50.0
+			let cellCount = 4.0
+			let cellSpacing = 3.0
+			return 90 + cellHeight * cellCount + cellSpacing * (cellCount-1)
+		case 3:
+			return 200
 		default:
 			return 0
 		}

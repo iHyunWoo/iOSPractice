@@ -69,22 +69,22 @@ class HomeTopBarTableViewCell: UITableViewCell {
 		profileImageView.snp.makeConstraints {
 			$0.centerY.equalTo(titleLogoImageView)
 			$0.trailing.equalToSuperview().inset(20)
-			$0.width.equalTo(25)
-			$0.height.equalTo(25)
+			$0.width.equalTo(23)
+			$0.height.equalTo(23)
 		}
 		
 		searchImageView.snp.makeConstraints {
 			$0.centerY.equalTo(titleLogoImageView)
-			$0.trailing.equalTo(profileImageView).inset(50)
-			$0.width.equalTo(25)
-			$0.height.equalTo(25)
+			$0.trailing.equalTo(profileImageView.snp.leading).offset(-20)
+			$0.width.equalTo(23)
+			$0.height.equalTo(23)
 		}
 		
 		remoteImageView.snp.makeConstraints {
 			$0.centerY.equalTo(titleLogoImageView)
-			$0.trailing.equalTo(searchImageView).inset(50)
-			$0.width.equalTo(25)
-			$0.height.equalTo(25)
+			$0.trailing.equalTo(searchImageView.snp.leading).offset(-20)
+			$0.width.equalTo(23)
+			$0.height.equalTo(23)
 		}
 		
 		
