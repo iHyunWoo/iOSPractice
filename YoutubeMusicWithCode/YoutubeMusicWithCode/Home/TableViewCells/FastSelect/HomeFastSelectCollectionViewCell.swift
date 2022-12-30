@@ -29,7 +29,7 @@ class HomeFastSelectCollectionViewCell: UICollectionViewCell {
 	
 	lazy var artistLabel: UILabel = {
 		let label = UILabel()
-		label.textColor = .white
+		label.textColor = .systemGray3
 		label.font = UIFont.systemFont(ofSize: 13, weight: .regular)
 		
 		return label

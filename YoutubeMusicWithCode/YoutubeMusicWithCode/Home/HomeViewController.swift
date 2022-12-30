@@ -51,7 +51,7 @@ extension HomeViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 4
+		return 5
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -71,6 +71,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 			guard let cell = tableView.dequeueReusableCell(withIdentifier: HomePlaylistTableViewCell.identifier) as? HomePlaylistTableViewCell else {return UITableViewCell()}
 			cell.titleLabel.text = "차트"
 			return cell
+		case 4:
+			guard let cell = tableView.dequeueReusableCell(withIdentifier: HomePlaylistTableViewCell.identifier) as? HomePlaylistTableViewCell else {return UITableViewCell()}
+			cell.titleLabel.text = "인기 음악 플레이리스트"
+			return cell
 		default:
 			return UITableViewCell()
 		}
@@ -89,7 +93,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 			let cellSpacing = 3.0
 			return 90 + cellHeight * cellCount + cellSpacing * (cellCount-1)
 		case 3:
-			return 200
+			return 250
+		case 4:
+			return 250
 		default:
 			return 0
 		}

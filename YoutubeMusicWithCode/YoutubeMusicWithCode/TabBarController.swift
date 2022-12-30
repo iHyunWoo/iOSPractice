@@ -15,6 +15,8 @@ class TabBarController: UITabBarController {
 		tabBar.backgroundColor = UIColor(named: "tintColor")
 		tabBar.tintColor = .white
 		tabBar.unselectedItemTintColor = .white
+		tabBar.isTranslucent = false
+
 		
 		
 		configureTabBar()

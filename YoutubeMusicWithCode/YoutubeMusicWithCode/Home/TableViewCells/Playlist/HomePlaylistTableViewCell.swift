@@ -33,7 +33,13 @@ class HomePlaylistTableViewCell: UITableViewCell {
 	
 	lazy var collectionView: UICollectionView = {
 		let layout = UICollectionViewFlowLayout()
+		layout.scrollDirection = .horizontal
+		layout.minimumLineSpacing = 5
+		
 		let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+		collectionView.register(HomePlaylistCollectionViewCell.self, forCellWithReuseIdentifier: HomePlaylistCollectionViewCell.identifier)
+		collectionView.backgroundColor = .black
+		collectionView.showsHorizontalScrollIndicator = false
 		
 		return collectionView
 	}()
@@ -52,8 +58,10 @@ class HomePlaylistTableViewCell: UITableViewCell {
 	
 	func configureViews() {
 		contentView.backgroundColor = .black
-		[titleLabel, moreButton]
+		
+		[titleLabel, moreButton, collectionView]
 			.forEach {contentView.addSubview($0)}
+		
 		titleLabel.snp.makeConstraints {
 			$0.top.equalToSuperview().inset(30)
 			$0.leading.equalToSuperview().inset(15)
@@ -65,6 +73,14 @@ class HomePlaylistTableViewCell: UITableViewCell {
 			$0.height.equalTo(22)
 			$0.width.equalTo(50)
 		}
+		
+		collectionView.snp.makeConstraints {
+			$0.top.equalTo(titleLabel.snp.bottom).offset(5)
+			$0.leading.equalTo(titleLabel.snp.leading)
+			$0.trailing.equalToSuperview()
+//			$0.bottom.equalToSuperview()
+			$0.height.equalTo(180)
+		}
 	}
 	
 	
@@ -73,11 +89,19 @@ class HomePlaylistTableViewCell: UITableViewCell {
 
 extension HomePlaylistTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 0
+		return 4
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		return UICollectionViewCell()
+		guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomePlaylistCollectionViewCell.identifier, for: indexPath) as? HomePlaylistCollectionViewCell else {return UICollectionViewCell()}
+		cell.titleLabel.text = "한국 인기곡 Top100"
+		cell.descriptionLabel.text = "차트 · Youtube Music"
+		
+		return cell
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+		return CGSize(width: 150, height: 200)
 	}
 	
 	
