@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreLocation
+import Alamofire
 
 class ViewController: UIViewController, MTMapViewDelegate {
 	
@@ -27,6 +28,7 @@ class ViewController: UIViewController, MTMapViewDelegate {
 		super.viewDidLoad()
 		
 		mapView = MTMapView(frame: subView.frame)
+		
 		
 		locationManager = CLLocationManager()
 		locationManager.delegate = self
