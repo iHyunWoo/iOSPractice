@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
 	
@@ -219,8 +220,15 @@ extension RegisterViewController {
 			alertUserLoginError()
 			return
 		}
-		
 		// Firebase Register
+		FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
+			guard let result = authResult, error == nil else {
+				print(error?.localizedDescription ?? "")
+				return
+			}
+			let user = result.user
+			print("Created User: \(user)")
+		})
 	}
 }
 // MARK: TextFieldDelegate

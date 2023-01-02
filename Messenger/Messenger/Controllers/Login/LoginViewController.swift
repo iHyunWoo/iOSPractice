@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 	
@@ -133,8 +134,16 @@ class LoginViewController: UIViewController {
 			alertUserLoginError()
 			return
 		}
-		
 		// Firebase Login
+		FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: { authResult, error in
+			guard let result = authResult, error == nil else {
+				print(error?.localizedDescription ?? "")
+				return
+			}
+			let user = result.user
+			print("Logged In User: \(user)")
+			
+		})
 	}
 	
 	func alertUserLoginError() {
