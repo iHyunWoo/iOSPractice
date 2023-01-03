@@ -1,6 +1,0 @@
-framework module Pods_KakaoMapPractice {
-  umbrella header "Pods-KakaoMapPractice-umbrella.h"
-
-  export *
-  module * { export * }
-}

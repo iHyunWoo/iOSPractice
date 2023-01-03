@@ -48,12 +48,9 @@
 		2CE07CC72944E3E6009001D4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE07CC42944E3B2009001D4 /* libc++.tbd */; };
 		2CE07CC82944E3ED009001D4 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE07CC52944E3BE009001D4 /* libxml2.tbd */; };
 		2CE07CC92944E3F4009001D4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE07CC62944E3D9009001D4 /* libsqlite3.tbd */; };
-		2CE07CCD29498620009001D4 /* KakaoKeywordSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE07CCC29498620009001D4 /* KakaoKeywordSearchResponse.swift */; };
-		EB4C1D9281C39F138C9C5A28 /* Pods_KakaoMapPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C522167081A82ED649676370 /* Pods_KakaoMapPractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0CEA82F945E88CAC8EBCE2C5 /* Pods-KakaoMapPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoMapPractice.release.xcconfig"; path = "Target Support Files/Pods-KakaoMapPractice/Pods-KakaoMapPractice.release.xcconfig"; sourceTree = "<group>"; };
 		2CE07A2D2944E06E009001D4 /* KakaoMapPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoMapPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE07A302944E06E009001D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CE07A322944E06E009001D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,9 +103,6 @@
 		2CE07CC42944E3B2009001D4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		2CE07CC52944E3BE009001D4 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		2CE07CC62944E3D9009001D4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		2CE07CCC29498620009001D4 /* KakaoKeywordSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoKeywordSearchResponse.swift; sourceTree = "<group>"; };
-		4E6F65FA856F58A19E8BB40A /* Pods-KakaoMapPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoMapPractice.debug.xcconfig"; path = "Target Support Files/Pods-KakaoMapPractice/Pods-KakaoMapPractice.debug.xcconfig"; sourceTree = "<group>"; };
-		C522167081A82ED649676370 /* Pods_KakaoMapPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoMapPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +118,6 @@
 				2CE07CBA2944E374009001D4 /* DaumMap.framework in Frameworks */,
 				2CE07CBF2944E397009001D4 /* SystemConfiguration.framework in Frameworks */,
 				2CE07CBD2944E38F009001D4 /* OpenGLES.framework in Frameworks */,
-				EB4C1D9281C39F138C9C5A28 /* Pods_KakaoMapPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +130,6 @@
 				2CE07A2F2944E06E009001D4 /* KakaoMapPractice */,
 				2CE07A2E2944E06E009001D4 /* Products */,
 				2CE07CBB2944E38E009001D4 /* Frameworks */,
-				DEFE1A5998D591E4F715AD02 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				2CE07C782944E374009001D4 /* DaumMap.embeddedframework */,
-				2CE07CCC29498620009001D4 /* KakaoKeywordSearchResponse.swift */,
 				2CE07A302944E06E009001D4 /* AppDelegate.swift */,
 				2CE07A322944E06E009001D4 /* SceneDelegate.swift */,
 				2CE07A342944E06E009001D4 /* ViewController.swift */,
@@ -235,18 +226,8 @@
 				2CE07CC02944E39E009001D4 /* CoreLocation.framework */,
 				2CE07CBE2944E397009001D4 /* SystemConfiguration.framework */,
 				2CE07CBC2944E38E009001D4 /* OpenGLES.framework */,
-				C522167081A82ED649676370 /* Pods_KakaoMapPractice.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DEFE1A5998D591E4F715AD02 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4E6F65FA856F58A19E8BB40A /* Pods-KakaoMapPractice.debug.xcconfig */,
-				0CEA82F945E88CAC8EBCE2C5 /* Pods-KakaoMapPractice.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,11 +237,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CE07A412944E06F009001D4 /* Build configuration list for PBXNativeTarget "KakaoMapPractice" */;
 			buildPhases = (
-				41F26711EB090A64D818F35C /* [CP] Check Pods Manifest.lock */,
 				2CE07A292944E06E009001D4 /* Sources */,
 				2CE07A2A2944E06E009001D4 /* Frameworks */,
 				2CE07A2B2944E06E009001D4 /* Resources */,
-				2744A9E5D02CBF032C0B8F74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,48 +323,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2744A9E5D02CBF032C0B8F74 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KakaoMapPractice/Pods-KakaoMapPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KakaoMapPractice/Pods-KakaoMapPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoMapPractice/Pods-KakaoMapPractice-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		41F26711EB090A64D818F35C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KakaoMapPractice-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		2CE07A292944E06E009001D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -393,7 +330,6 @@
 			files = (
 				2CE07A352944E06E009001D4 /* ViewController.swift in Sources */,
 				2CE07A312944E06E009001D4 /* AppDelegate.swift in Sources */,
-				2CE07CCD29498620009001D4 /* KakaoKeywordSearchResponse.swift in Sources */,
 				2CE07A332944E06E009001D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,7 +472,6 @@
 		};
 		2CE07A422944E06F009001D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E6F65FA856F58A19E8BB40A /* Pods-KakaoMapPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -559,7 +494,6 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,7 +510,6 @@
 		};
 		2CE07A432944E06F009001D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CEA82F945E88CAC8EBCE2C5 /* Pods-KakaoMapPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -599,7 +532,6 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
